@@ -464,66 +464,22 @@ body {
   text-decoration: none;
 }
 
-.boxes .container .row .col-lg-4 {
-  background-image: url(../img/parallax-2.jpeg);
-  width: 418px;
-  height: 302px;
-  margin: 10px 0px;
-  background-size: contain;
+.zoomin {
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
 
-.boxes .container .row .col-lg-4:hover {
-  background-color: #17B9D4;
-  -webkit-animation: fadein linear 1s, fadeout linear 1s;
-          animation: fadein linear 1s, fadeout linear 1s;
+.zoomin:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
-@-webkit-keyframes fadein {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    background-color: #17B9D4;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    background-color: #17B9D4;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes fadeout {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    background-color: #17B9D4;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeout {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    background-color: #17B9D4;
-  }
-  100% {
-    opacity: 1;
-  }
+.image-inside-boxes {
+  padding-top: 30px;
+  border-radius: 0px 0px 30px 0px;
+  width: 400px;
 }
 
 .boxes .container .row {
